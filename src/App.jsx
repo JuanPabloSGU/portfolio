@@ -12,7 +12,7 @@ const projects = [
     link: 'https://github.com/JuanPabloSGU/phishnet',
   },
   {
-    year: '2025',
+    year: '2024',
     name: 'KPrintIPP',
     tag: 'Systems',
     stack: 'C',
@@ -22,21 +22,21 @@ const projects = [
   },
   {
     year: '2025',
-    name: 'Slogen',
-    tag: 'SRE tooling',
-    stack: 'Go · Prometheus · PromQL',
-    description:
-      'A Sloth-inspired SLO generator: an API server and gateway that turn declarative YAML SLO definitions into PromQL queries and Prometheus rules, built to understand how SLO tooling works under the hood.',
-    link: 'https://github.com/JuanPabloSGU/slogen',
-  },
-  {
-    year: '2025',
     name: 'Quic Streaming',
     tag: 'Networking',
     stack: 'Go · QUIC',
     description:
       'A minimal client/server pair streaming video over QUIC — hands-on exploration of the protocol as a lower-latency alternative to TCP for real-time media delivery.',
     link: 'https://github.com/JuanPabloSGU/quic-streaming',
+  },
+  {
+    year: '2026',
+    name: 'Slogen',
+    tag: 'SRE tooling',
+    stack: 'Go · Prometheus · PromQL',
+    description:
+      'A Sloth-inspired SLO generator: an API server and gateway that turn declarative YAML SLO definitions into PromQL queries and Prometheus rules, built to understand how SLO tooling works under the hood.',
+    link: 'https://github.com/JuanPabloSGU/slogen',
   },
 ]
 
