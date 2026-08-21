@@ -1,6 +1,6 @@
 # portfolio
 
-Personal portfolio site — React + Vite, single page, deployed on Cloudflare Pages.
+Personal portfolio site — static HTML/CSS built with Vite, single page, deployed on Cloudflare Pages. No JavaScript framework: the page has no interactivity that needs one, so the entire production build is a few KB.
 
 ## Develop
 

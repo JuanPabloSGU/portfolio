@@ -8,10 +8,124 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/index.css" />
     <title>Juan Pablo Sanchez Garcia</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="page">
+      <header class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Software &amp; DevOps Engineer</p>
+          <h1>Juan Pablo Sanchez Garcia</h1>
+          <p class="hero-sub">
+            I build backend systems and the infrastructure underneath them — currently at the
+            House of Commons, previously at Field Effect. Outside of work I write low-level tools
+            and self-hosted infrastructure for the sake of understanding how things actually work.
+          </p>
+          <div class="hero-links">
+            <a class="button" href="mailto:dev@jpsg.dev">Get in touch</a>
+            <a class="link" href="https://github.com/JuanPabloSGU" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+        <svg class="hero-art" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="160" cy="160" r="118" stroke="var(--line)" stroke-width="1.5" />
+          <rect x="92" y="108" width="136" height="88" rx="6" stroke="var(--accent)" stroke-width="3" />
+          <path d="M132 218 h56 M160 196 v22" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" />
+          <path d="M112 130 h44 M112 146 h64 M112 162 h32" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" />
+          <path d="M40 70 Q62 48 92 58" stroke="var(--line)" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M280 250 Q258 274 228 262" stroke="var(--line)" stroke-width="1.5" stroke-linecap="round" />
+          <circle cx="252" cy="82" r="4" fill="var(--accent)" />
+          <circle cx="66" cy="242" r="4" fill="var(--accent)" />
+        </svg>
+      </header>
+
+      <section class="section" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <div class="timeline-scroll">
+          <div class="timeline">
+            <a class="timeline-item" href="https://github.com/JuanPabloSGU/phishnet" target="_blank" rel="noreferrer">
+              <span class="timeline-year">2024</span>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-card">
+                <div class="timeline-card-head">
+                  <h3>Phishnet</h3>
+                  <span class="tag">Capstone</span>
+                </div>
+                <p class="stack">PyTorch · React · ELK · Triton</p>
+                <p class="description">ML-driven phishing detector combining NLP and image classification to flag malicious sites from page content and structure. Shipped as a browser extension backed by a full CI/CD pipeline deploying to a Triton inference server, with ELK dashboards for monitoring model performance in production.</p>
+              </div>
+            </a>
+            <a class="timeline-item" href="https://github.com/JuanPabloSGU/KPrintIPP" target="_blank" rel="noreferrer">
+              <span class="timeline-year">2024</span>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-card">
+                <div class="timeline-card-head">
+                  <h3>KPrintIPP</h3>
+                  <span class="tag">Systems</span>
+                </div>
+                <p class="stack">C</p>
+                <p class="description">A printer description language parser and renderer written from scratch in C — kernel, parser, and renderer built as independent pieces to understand how IPP print jobs get interpreted end to end.</p>
+              </div>
+            </a>
+            <a class="timeline-item" href="https://github.com/JuanPabloSGU/quic-streaming" target="_blank" rel="noreferrer">
+              <span class="timeline-year">2025</span>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-card">
+                <div class="timeline-card-head">
+                  <h3>Quic Streaming</h3>
+                  <span class="tag">Networking</span>
+                </div>
+                <p class="stack">Go · QUIC</p>
+                <p class="description">A minimal client/server pair streaming video over QUIC — hands-on exploration of the protocol as a lower-latency alternative to TCP for real-time media delivery.</p>
+              </div>
+            </a>
+            <a class="timeline-item" href="https://github.com/JuanPabloSGU/slogen" target="_blank" rel="noreferrer">
+              <span class="timeline-year">2026</span>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-card">
+                <div class="timeline-card-head">
+                  <h3>Slogen</h3>
+                  <span class="tag">SRE tooling</span>
+                </div>
+                <p class="stack">Go · Prometheus · PromQL</p>
+                <p class="description">A Sloth-inspired SLO generator: an API server and gateway that turn declarative YAML SLO definitions into PromQL queries and Prometheus rules, built to understand how SLO tooling works under the hood.</p>
+              </div>
+            </a>
+          </div>
+          <div class="timeline-fade" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+        <ul class="experience-list">
+          <li>
+            <span class="job-role">Digital Product Developer</span>
+            <span class="job-org">House of Commons</span>
+            <span class="job-period">Feb 2025 — Present</span>
+          </li>
+          <li>
+            <span class="job-role">System Administrator</span>
+            <span class="job-org">Field Effect Software</span>
+            <span class="job-period">May 2024 — Feb 2025</span>
+          </li>
+          <li>
+            <span class="job-role">IT Administrator Co-op</span>
+            <span class="job-org">Field Effect Software</span>
+            <span class="job-period">May 2023 — Aug 2023</span>
+          </li>
+          <li>
+            <span class="job-role">DevOps Engineering Student</span>
+            <span class="job-org">Fisheries and Oceans Canada</span>
+            <span class="job-period">Sep 2022 — Dec 2022</span>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="section contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Let&rsquo;s talk</h2>
+        <p>Reach out at <a class="link" href="mailto:dev@jpsg.dev">dev@jpsg.dev</a></p>
+      </footer>
+    </div>
   </body>
 </html>

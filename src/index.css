@@ -134,6 +134,10 @@ a {
 
 /* Timeline */
 
+.timeline-scroll {
+  position: relative;
+}
+
 .timeline {
   position: relative;
   display: flex;
@@ -141,6 +145,23 @@ a {
   overflow-x: auto;
   padding: 0.5rem 0.25rem 1.5rem;
   scroll-snap-type: x proximity;
+}
+
+.timeline-fade {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 1.5rem;
+  right: 0;
+  width: 2.5rem;
+  background: linear-gradient(to right, transparent, var(--bg));
+  pointer-events: none;
+}
+
+@media (min-width: 900px) {
+  .timeline-fade {
+    display: none;
+  }
 }
 
 .timeline::before {
