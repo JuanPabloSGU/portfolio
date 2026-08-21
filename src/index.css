@@ -139,12 +139,15 @@ a {
 }
 
 .timeline {
+  overflow-x: auto;
+  padding: 0.5rem 0.25rem 1.5rem;
+}
+
+.timeline-track {
   position: relative;
   display: flex;
   gap: 2.5rem;
-  overflow-x: auto;
-  padding: 0.5rem 0.25rem 1.5rem;
-  scroll-snap-type: x proximity;
+  width: max-content;
 }
 
 .timeline-fade {
@@ -164,12 +167,12 @@ a {
   }
 }
 
-.timeline::before {
+.timeline-track::before {
   content: '';
   position: absolute;
   top: 2.05rem;
-  left: 0;
-  right: 0;
+  left: 0.25rem;
+  right: 0.25rem;
   height: 1px;
   background: var(--line);
 }

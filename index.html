@@ -43,6 +43,7 @@
         <h2 id="projects-heading">Projects</h2>
         <div class="timeline-scroll">
           <div class="timeline">
+            <div class="timeline-track">
             <a class="timeline-item" href="https://github.com/JuanPabloSGU/phishnet" target="_blank" rel="noreferrer">
               <span class="timeline-year">2024</span>
               <span class="timeline-dot" aria-hidden="true"></span>
@@ -88,7 +89,7 @@
                   <span class="tag">Data pipeline</span>
                 </div>
                 <p class="stack">Python · Playwright · SQLite · Docker</p>
-                <p class="description">An end-to-end pipeline for finding investment properties on Realtor.ca: a stealth Playwright scraper feeds classification and SQLite enrichment (with price-history tracking and Ottawa neighborhood geo-lookup via OSM), then ships a daily digest by email. Fully Dockerized and orchestrated as a single scrape → merge → classify → enrich → notify run.</p>
+                <p class="description">A Playwright scraper for Realtor.ca that classifies listings, tracks price history in SQLite, and emails a daily digest of new investment properties. Fully Dockerized.</p>
               </div>
             </div>
             <a class="timeline-item" href="https://github.com/JuanPabloSGU/slogen" target="_blank" rel="noreferrer">
@@ -103,6 +104,7 @@
                 <p class="description">A Sloth-inspired SLO generator: an API server and gateway that turn declarative YAML SLO definitions into PromQL queries and Prometheus rules, built to understand how SLO tooling works under the hood.</p>
               </div>
             </a>
+          </div>
           </div>
           <div class="timeline-fade" aria-hidden="true"></div>
         </div>
