@@ -110,22 +110,6 @@
         </div>
       </section>
 
-      <script>
-        (function () {
-          var track = document.querySelector('.timeline-track');
-          var dots = document.querySelectorAll('.timeline-dot');
-          if (!track || dots.length < 2) return;
-          function setRailWidth() {
-            var trackLeft = track.getBoundingClientRect().left;
-            var lastDot = dots[dots.length - 1].getBoundingClientRect();
-            var lastDotCenter = lastDot.left + lastDot.width / 2 - trackLeft;
-            track.style.setProperty('--rail-width', lastDotCenter - 4 + 'px');
-          }
-          setRailWidth();
-          window.addEventListener('resize', setRailWidth);
-        })();
-      </script>
-
       <section class="section" aria-labelledby="experience-heading">
         <h2 id="experience-heading">Experience</h2>
         <ul class="experience-list">

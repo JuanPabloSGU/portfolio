@@ -172,7 +172,7 @@ a {
   position: absolute;
   top: 2.05rem;
   left: 0.25rem;
-  width: var(--rail-width, calc(100% - 0.5rem));
+  right: calc(260px - 4.5px);
   height: 1px;
   background: var(--line);
 }
@@ -183,6 +183,8 @@ a {
   flex-direction: column;
   align-items: flex-start;
   flex: 0 0 260px;
+  min-width: 0;
+  max-width: 260px;
   text-decoration: none;
   color: inherit;
   scroll-snap-align: start;
