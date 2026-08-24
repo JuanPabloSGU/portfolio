@@ -23,7 +23,7 @@
             and self-hosted infrastructure for the sake of understanding how things actually work.
           </p>
           <div class="hero-links">
-            <a class="button" href="mailto:dev@jpsg.dev">Get in touch</a>
+            <a class="button" href="mailto:dev@jpsg.dev">Email</a>
             <a class="link" href="https://github.com/JuanPabloSGU" target="_blank" rel="noreferrer">GitHub ↗</a>
           </div>
         </div>
@@ -110,6 +110,22 @@
         </div>
       </section>
 
+      <script>
+        (function () {
+          var track = document.querySelector('.timeline-track');
+          var dots = document.querySelectorAll('.timeline-dot');
+          if (!track || dots.length < 2) return;
+          function setRailWidth() {
+            var trackLeft = track.getBoundingClientRect().left;
+            var lastDot = dots[dots.length - 1].getBoundingClientRect();
+            var lastDotCenter = lastDot.left + lastDot.width / 2 - trackLeft;
+            track.style.setProperty('--rail-width', lastDotCenter - 4 + 'px');
+          }
+          setRailWidth();
+          window.addEventListener('resize', setRailWidth);
+        })();
+      </script>
+
       <section class="section" aria-labelledby="experience-heading">
         <h2 id="experience-heading">Experience</h2>
         <ul class="experience-list">
@@ -135,11 +151,6 @@
           </li>
         </ul>
       </section>
-
-      <footer class="section contact" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Let&rsquo;s talk</h2>
-        <p>Reach out at <a class="link" href="mailto:dev@jpsg.dev">dev@jpsg.dev</a></p>
-      </footer>
     </div>
   </body>
 </html>

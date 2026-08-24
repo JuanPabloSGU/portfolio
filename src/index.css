@@ -172,9 +172,7 @@ a {
   position: absolute;
   top: 2.05rem;
   left: 0.25rem;
-  /* Stops at the center of the last dot (4.5px = half of .timeline-dot's 9px),
-     not the track's right edge — items are wider than their dot. */
-  right: calc(260px - 4.5px);
+  width: var(--rail-width, calc(100% - 0.5rem));
   height: 1px;
   background: var(--line);
 }
